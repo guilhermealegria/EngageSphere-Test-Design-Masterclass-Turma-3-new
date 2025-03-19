@@ -8,7 +8,7 @@
     "start:frontend": "cd frontend && npm start",
     "start:server": "cd backend && npm start",
     "cy:api": "npx cypress run --env grepTags=api",
-    "cy:gui":"npx cypress run --env grepTags=gui"
+    "cy:gui": "npx cypress run --env grepTags=gui"
   },
   "repository": {
     "type": "git",
@@ -36,6 +36,7 @@
   },
   "dependencies": {
     "@cypress/grep": "^4.1.0",
-    "cypress-each": "^1.14.0"
+    "cypress-each": "^1.14.0",
+    "soap": "^1.1.10"
   }
 }

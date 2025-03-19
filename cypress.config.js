@@ -1,4 +1,5 @@
 const { defineConfig } = require("cypress");
+const { soaprequest } = require('./cypress/task/soap')
 
 module.exports = defineConfig({
   e2e: {
@@ -9,6 +10,9 @@ module.exports = defineConfig({
     fixturesFolder: false,
     setupNodeEvents(on, config) {
       require('@cypress/grep/src/plugin')(config);
+      on('task', {
+        soaprequest
+      })
       return config;
     },
   },
